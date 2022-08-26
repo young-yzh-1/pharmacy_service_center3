@@ -57,18 +57,18 @@
 import {reactive,toRefs} from 'vue'
 import { useRouter } from 'vue-router';
 
-import drugDeviceGuide from './drugDeviceGuideNav/drugDeviceGuide.vue'
-import drugDeviceBuyService from './drugDeviceBuyServiceNav/drugDeviceBuyService.vue'
-import durgDevicePersonalRecords from './durgDevicePersonalRecordsNav/durgDevicePersonalRecords.vue'
-import durgDeviceHealthSelfHelp from './durgDeviceHealthSelfHelpNav/durgDeviceHealthSelfHelp.vue'
+import DrugDeviceGuide from './drugDeviceGuideNav/drugDeviceGuide.vue'
+import DrugDeviceBuyService from './drugDeviceBuyServiceNav/drugDeviceBuyService.vue'
+import DurgDevicePersonalRecords from './durgDevicePersonalRecordsNav/durgDevicePersonalRecords.vue'
+import DurgDeviceHealthSelfHelp from './durgDeviceHealthSelfHelpNav/durgDeviceHealthSelfHelp.vue'
 
 export default {
    name: 'pharmacyGuideHome',
    components: {
-    drugDeviceGuide,
-    drugDeviceBuyService,
-    durgDevicePersonalRecords,
-    durgDeviceHealthSelfHelp
+    DrugDeviceGuide,
+    DrugDeviceBuyService,
+    DurgDevicePersonalRecords,
+    DurgDeviceHealthSelfHelp
    },
    setup(){
     const $router = useRouter()

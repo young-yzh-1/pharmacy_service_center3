@@ -1,9 +1,9 @@
 <template>
     <div class="pharmacy_service">
         <!-- 头部 -->
-        <pharmacyHeader></pharmacyHeader>
+        <PharmacyHeader/>
         <!-- 内容区 -->
-        <pharmacyContent></pharmacyContent>
+        <PharmacyContent/>
         <!-- 尾部 -->
         <div class="pharmacy_service_bottom">
             <img src="@/assets/images/Home/badge.png" alt="">
@@ -12,11 +12,11 @@
   </div>  
 </template>
 <script>
-import pharmacyHeader from './pharmacyHeader/pharmacyHeader.vue'
-import pharmacyContent from './pharmacyContent/pharmacyContent.vue'
+import PharmacyHeader from './pharmacyHeader/pharmacyHeader.vue'
+import PharmacyContent from './pharmacyContent/pharmacyContent.vue'
 export default {
     name:'pharmacyHome',
-    components:{pharmacyHeader,pharmacyContent}
+    components:{PharmacyHeader,PharmacyContent}
 }
 </script>
 <style>
@@ -28,7 +28,7 @@ body{
     height: 100%;
     background: #f1f8ff;
     overflow-y: auto;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-family: PingFang SC,PingFang SC-Medium,Microsoft YaHei, Microsoft YaHei-Regular;;
 }
 /* 底部 */
 .pharmacy_service_bottom{

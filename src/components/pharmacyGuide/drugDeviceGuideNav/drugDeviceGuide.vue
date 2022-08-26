@@ -10,25 +10,25 @@
         </div>
         <div class="service_text">{{ item.title }}</div>
       </div>
-      <drugDeviceGuideCommunity v-if="activeIndex==0"   @backMethod = "backMethod"/>
-      <drugDeviceGuideInstore v-if="activeIndex==1"  @backMethod = "backMethod"/>
-      <drugDeviceGuideOnline v-if="activeIndex==2"  @backMethod = "backMethod"/>
-      <drugDeviceGuideOnline v-if="activeIndex==3"  @backMethod = "backMethod"/>
-      <drugDeviceGuideOnline v-if="activeIndex==4"  @backMethod = "backMethod"/>
+      <DrugDeviceGuideCommunity v-if="activeIndex==0"   @backMethod = "backMethod"/>
+      <DrugDeviceGuideInstore v-if="activeIndex==1"  @backMethod = "backMethod"/>
+      <DrugDeviceGuideOnline v-if="activeIndex==2"  @backMethod = "backMethod"/>
+      <DrugDeviceGuideOnline v-if="activeIndex==3"  @backMethod = "backMethod"/>
+      <DrugDeviceGuideOnline v-if="activeIndex==4"  @backMethod = "backMethod"/>
    </div>
 </template>
 <script>
 import {ref,reactive,toRefs} from 'vue'
 
-import drugDeviceGuideCommunity from './drugDeviceGuideCommunity.vue'
-import drugDeviceGuideInstore from './drugDeviceGuideInstore.vue'
-import drugDeviceGuideOnline from './drugDeviceGuideOnline.vue'
+import DrugDeviceGuideCommunity from './drugDeviceGuideCommunity.vue'
+import DrugDeviceGuideInstore from './drugDeviceGuideInstore.vue'
+import DrugDeviceGuideOnline from './drugDeviceGuideOnline.vue'
 export default {
    name: 'DrugDeviceGuide',
    components:{
-      drugDeviceGuideCommunity,
-      drugDeviceGuideInstore,
-      drugDeviceGuideOnline
+      DrugDeviceGuideCommunity,
+      DrugDeviceGuideInstore,
+      DrugDeviceGuideOnline
    },
    setup(){
       const navShow = ref(true)

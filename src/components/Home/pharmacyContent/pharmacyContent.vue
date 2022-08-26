@@ -53,30 +53,30 @@
             </div>
             <div class="outer_category_details">
                 <div class="category_details">
-                    <categoryDocument  :style="{display:activeIndex == 0 ?'block':'none'}"/>
-                    <categoryMedia  :style="{display:activeIndex == 1 ?'block':'none'}"/>
-                    <categorySystem  :style="{display:activeIndex == 2 ?'block':'none'}"/>
-                    <categoryStyle  :style="{display:activeIndex == 3 ?'block':'none'}"/>
+                    <CategoryDocument  :style="{display:activeIndex == 0 ?'block':'none'}"/>
+                    <CategoryMedia  :style="{display:activeIndex == 1 ?'block':'none'}"/>
+                    <CategorySystem  :style="{display:activeIndex == 2 ?'block':'none'}"/>
+                    <CategoryStyle  :style="{display:activeIndex == 3 ?'block':'none'}"/>
                 </div>
             </div>
           </div>
         </div>
         <!-- 右侧导航区 -->
-        <pharmacyNav></pharmacyNav>
+        <PharmacyNav/>
       </div>
     </div>
 </template>
 <script>
-import pharmacyNav from './pharmacyNav'
-import categoryDocument from './category/categoryDocument.vue'
-import categoryMedia from './category/categoryMedia.vue'
-import categoryStyle from './category/categoryStyle.vue'
-import categorySystem from './category/categorySystem.vue'
+import PharmacyNav from './pharmacyNav'
+import CategoryDocument from './category/categoryDocument.vue'
+import CategoryMedia from './category/categoryMedia.vue'
+import CategoryStyle from './category/categoryStyle.vue'
+import CategorySystem from './category/categorySystem.vue'
 
 import {reactive,ref,toRefs} from 'vue'
 export default {
   name: "parmacyContent",
-  components: {pharmacyNav,categoryDocument,categoryMedia,categoryStyle,categorySystem},
+  components: {PharmacyNav,CategoryDocument,CategoryMedia,CategoryStyle,CategorySystem},
   setup(){
     let index = ref(0)
     let activeIndex = ref(0)
